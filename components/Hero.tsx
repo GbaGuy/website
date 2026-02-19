@@ -1,4 +1,5 @@
 import React from 'react'
+import Ruler from './Ruler'
 
 function Hero() {
   return (
@@ -18,7 +19,8 @@ function Hero() {
     </div>
 
     {/* <!-- Decorative timeline ruler --> */}
-    <div className="hero-ruler absolute h-9.5 flex items-center py-0 px-5 bg-(--panel2) border-t border-t-(--border) overflow-hidden z-1 bottom-0 left-0 right-0" id="ruler"></div>
+    {/* <div className="hero-ruler absolute h-9.5 flex items-center py-0 px-5 bg-(--panel2) border-t border-t-(--border) overflow-hidden z-1 bottom-0 left-0 right-0" id="ruler"></div> */}
+  <Ruler />
   </div>
 
   )

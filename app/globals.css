@@ -104,6 +104,21 @@ nav a.cta:hover {
       transparent 60%
     );
 }
+.hero-ruler {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 38px;
+  background: var(--panel2);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 2px;
+  overflow: hidden;
+  z-index: 1;
+}
 
 .ruler-tick {
   width: 1px;
