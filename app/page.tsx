@@ -1,5 +1,6 @@
 import AppMockup from "@/components/AppMockup";
 import ComparisonTable from "@/components/ComparisonTable";
+import Contribute from "@/components/Contribute";
 import Features from "@/components/Features";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -18,6 +19,8 @@ export default function Home() {
         <ComparisonTable />
         <div className="divider" />
         <Install />
+        <div className="divider" />
+        <Contribute />
       </main>
     </>
   );

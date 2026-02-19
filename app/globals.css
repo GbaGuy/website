@@ -707,3 +707,68 @@ tbody tr:hover td {
 .code-block .cmd {
   color: #e8f5a8;
 }
+
+/* ── CONTRIBUTE ── */
+.contribute-wrap {
+  background: linear-gradient(
+    135deg,
+    rgba(232, 109, 46, 0.08) 0%,
+    rgba(0, 200, 215, 0.05) 100%
+  );
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 60px 48px;
+  text-align: center;
+}
+.contribute-wrap h2 {
+  margin-bottom: 14px;
+}
+.contribute-wrap p {
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 540px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+.contrib-steps {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  max-width: 200px;
+  text-align: left;
+}
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 200, 215, 0.12);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-text h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+  letter-spacing: 0.03em;
+}
+.step-text p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
