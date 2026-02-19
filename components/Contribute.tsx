@@ -1,5 +1,6 @@
 import React from 'react'
 import MotionFadeInOnScroll from './MotionFadeInOnScroll'
+import { IoStar } from 'react-icons/io5'
 
 function Contribute() {
     return (
@@ -33,7 +34,7 @@ function Contribute() {
                         </MotionFadeInOnScroll>
                     </div>
                     <div className="btn-group">
-                        <a href="https://github.com/Flare-Animate/Flare" target="_blank" className="btn btn-primary">Star on GitHub ★</a>
+                        <a href="https://github.com/Flare-Animate/Flare" target="_blank" className="btn btn-primary">Star on GitHub <IoStar /></a>
                         <a href="https://github.com/Flare-Animate/Flare/issues" target="_blank" className="btn btn-ghost">Browse Issues</a>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Ruler from './Ruler'
+import { IoArrowDownOutline } from 'react-icons/io5'
 
 function Hero() {
   return (
@@ -12,7 +13,7 @@ function Hero() {
         Flare is a <strong>free, open-source</strong> animation tool built for creators who know Adobe Animate — same workflow, same file formats, zero monthly fee.
       </p>
       <div className="btn-group fade-in delay-3">
-        <a href="#install" className="btn btn-primary">⬇ Get Flare</a>
+        <a href="#install" className="btn btn-primary"><IoArrowDownOutline /> Get Flare</a>
         <a href="https://github.com/Flare-Animate/Flare" target="_blank" className="btn btn-ghost">View on GitHub</a>
         <a href="#contribute" className="btn btn-orange">Contribute</a>
       </div>

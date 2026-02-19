@@ -28,6 +28,9 @@
     --foreground: #ededed;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: linear-gradient(
@@ -44,23 +47,137 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  background: rgba(20, 12, 6, 0.92);
+
+/* ── HAMBURGER ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 200;
+}
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition:
+    transform 0.25s,
+    opacity 0.25s;
+}
+.open-1 {
+  transform: translateY(7px) rotate(45deg);
+}
+.open-2 {
+  opacity: 0;
+}
+.open-3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── MOBILE NAV ── */
+.mobile-nav {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background: rgba(20, 12, 6, 0.97);
+  backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px 16px;
+  gap: 4px;
+  z-index: 99;
+}
+.mobile-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 4px;
+  transition:
+    color 0.2s,
+    background 0.2s;
+  letter-spacing: 0.02em;
+}
+.mobile-nav a:hover {
+  color: var(--text);
+  background: var(--panel);
+}
+.mobile-nav a.cta {
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 6px;
+}
+.mobile-nav a.cta:hover {
+  background: #00e5f7;
+}
+
+/* ── RESPONSIVE BREAKPOINT ── */
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* ── HEADER ── */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(20, 12, 6, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 56px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.brand img {
+  height: 32px;
+  border-radius: 6px;
 }
 .brand-name {
   font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
   color: var(--white);
   letter-spacing: 0.04em;
 }
-
 .brand-tag {
+  font-size: 10px;
   letter-spacing: 0.1em;
   color: var(--accent);
+  text-transform: uppercase;
   background: rgba(0, 200, 215, 0.1);
   border: 1px solid rgba(0, 200, 215, 0.25);
+  padding: 2px 7px;
+  border-radius: 3px;
 }
-
+/* nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+} */
 nav a {
   color: var(--muted);
   text-decoration: none;
@@ -85,6 +202,7 @@ nav a.cta {
 nav a.cta:hover {
   background: #00e5f7;
 }
+
 
 .hero-bg {
   background:
@@ -837,7 +955,9 @@ footer {
 .fade-on-scroll {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 .fade-on-scroll.visible {
