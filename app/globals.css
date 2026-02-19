@@ -81,6 +81,129 @@ nav a.cta {
   background: var(--accent);
   color: #000;
   font-weight: 600;
-}   
-nav a.cta:hover { background: #00e5f7; }
- 
+}
+nav a.cta:hover {
+  background: #00e5f7;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(
+      ellipse 70% 55% at 50% 30%,
+      rgba(0, 200, 215, 0.07) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 80% 80%,
+      rgba(232, 109, 46, 0.14) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 10% 60%,
+      rgba(200, 80, 20, 0.1) 0%,
+      transparent 60%
+    );
+}
+
+.ruler-tick {
+  width: 1px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+.ruler-tick.tall {
+  height: 18px;
+  background: var(--muted);
+}
+.ruler-tick.short {
+  height: 10px;
+}
+.ruler-label {
+  font-size: 9px;
+  color: var(--muted);
+  font-family: 'Rajdhani', sans-serif;
+  position: absolute;
+  bottom: 20px;
+  letter-spacing: 0.04em;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(46px, 8vw, 88px);
+  font-weight: 700;
+  line-height: 0.95;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  margin-bottom: 22px;
+}
+h1 .hl {
+  color: var(--accent);
+}
+h1 .hl2 {
+  color: var(--accent2);
+}
+.hero-sub {
+  color: var(--muted);
+  font-size: 17px;
+  max-width: 540px;
+  margin: 0 auto 36px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.hero-sub strong {
+  color: var(--text);
+  font-weight: 500;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 26px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #000;
+}
+.btn-primary:hover {
+  background: #00e5f7;
+  transform: translateY(-1px);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn-orange {
+  background: var(--accent2);
+  color: #fff;
+}
+.btn-orange:hover {
+  background: #ff8044;
+  transform: translateY(-1px);
+}
