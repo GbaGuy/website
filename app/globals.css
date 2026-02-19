@@ -595,3 +595,54 @@ h2 {
   color: var(--muted);
   line-height: 1.6;
 }
+
+/* ── COMPARISON TABLE ── */
+.compare-wrap {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead tr {
+  background: #111114;
+}
+th {
+  padding: 14px 20px;
+  text-align: left;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+th:first-child {
+  color: var(--accent);
+}
+td {
+  padding: 13px 20px;
+  font-size: 13px;
+  color: var(--text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+td:first-child {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+.check {
+  color: var(--accent);
+  font-size: 16px;
+}
+.cross {
+  color: #666;
+  font-size: 16px;
+}
