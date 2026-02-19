@@ -22,9 +22,8 @@ export default function Home() {
         <Install />
         <div className="divider" />
         <Contribute />
-        <div className="divider" />
-        <Footer />
       </main>
+        <Footer />
     </>
   );
 }
