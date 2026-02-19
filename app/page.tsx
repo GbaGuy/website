@@ -3,6 +3,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import Features from "@/components/Features";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Install from "@/components/Install";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         <Features />
         <div className="divider" />
         <ComparisonTable />
+        <div className="divider" />
+        <Install />
       </main>
     </>
   );

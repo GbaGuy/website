@@ -646,3 +646,64 @@ tbody tr:hover td {
   color: #666;
   font-size: 16px;
 }
+
+/* ── INSTALL ── */
+.install-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 36px;
+}
+.platform-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 22px 20px;
+  text-decoration: none;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.platform-card:hover {
+  border-color: var(--accent);
+  background: var(--panel2);
+}
+.platform-icon {
+  font-size: 28px;
+}
+.platform-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.03em;
+}
+.platform-sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+.platform-link {
+  font-size: 12px;
+  color: var(--accent);
+  margin-top: 4px;
+}
+
+.code-block {
+  background: #111114;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 18px 20px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #aaf0f8;
+  overflow-x: auto;
+}
+.code-block .comment {
+  color: #556;
+}
+.code-block .cmd {
+  color: #e8f5a8;
+}
